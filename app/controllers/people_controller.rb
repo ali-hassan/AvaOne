@@ -1,4 +1,5 @@
 class PeopleController < Devise::RegistrationsController
+  layout 'ava_one'
   include ConfigRecaptcha
 
   skip_before_action :verify_authenticity_token, :only => [:create]
