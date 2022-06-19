@@ -294,7 +294,7 @@
   <div class="container">
     <div class="section-header">
       <h3 class="header-title">Browse By Catergory</h3>
-      <div class="header-content"><a href="all-authors.html"
+      <div class="header-content"><a href="<%= authors_path %>"
                                      class="default-btn style-2 small-btn move-right"><span>View All
                             <i class="icofont-circled-right"></i></span></a> </div>
     </div>
@@ -307,7 +307,7 @@
                 <%= image_tag "category/cat-1.png", alt: "Category Image"%>
               </div>
               <div class="cat-content">
-                <h6><a href="all-authors.html">Art Work</a></h6>
+                <h6><a href="<%= authors_path %>">Art Work</a></h6>
               </div>
             </div>
           </div>
@@ -319,7 +319,7 @@
                 <%= image_tag "category/cat-2.png", alt: "Category Image"%>
               </div>
               <div class="cat-content">
-                <h6><a href="all-authors.html">Music</a></h6>
+                <h6><a href="<%= authors_path %>">Music</a></h6>
               </div>
             </div>
           </div>
@@ -331,7 +331,7 @@
                 <%= image_tag "category/cat-3.png", alt: "Category Image"%>
               </div>
               <div class="cat-content">
-                <h6><a href="all-authors.html">utility</a></h6>
+                <h6><a href="<%=authors_path %>">utility</a></h6>
               </div>
             </div>
           </div>
@@ -343,7 +343,7 @@
                 <%= image_tag "category/cat-4.png", alt: "Category Image"%>
               </div>
               <div class="cat-content">
-                <h6><a href="all-authors.html">Sports</a></h6>
+                <h6><a href="<%=authors_path %>">Sports</a></h6>
               </div>
             </div>
           </div>
@@ -355,7 +355,7 @@
                 <%= image_tag "category/cat-5.png", alt: "Category Image"%>
               </div>
               <div class="cat-content">
-                <h6><a href="all-authors.html">Collectibles</a></h6>
+                <h6><a href="<%=authors_path %>">Collectibles</a></h6>
               </div>
             </div>
           </div>
@@ -367,7 +367,7 @@
                 <%= image_tag "category/cat-6.png", alt: "Category Image"%>
               </div>
               <div class="cat-content">
-                <h6><a href="all-authors.html">Cards</a></h6>
+                <h6><a href="<%=authors_path %>">Cards</a></h6>
               </div>
             </div>
           </div>
@@ -379,7 +379,7 @@
                 <%= image_tag "category/cat-7.png", alt: "Category Image"%>
               </div>
               <div class="cat-content">
-                <h6><a href="all-authors.html">Metaverse</a></h6>
+                <h6><a href="<%=authors_path %>">Metaverse</a></h6>
               </div>
             </div>
           </div>
@@ -391,7 +391,7 @@
                 <%= image_tag "category/cat-8.png", alt: "Category Image"%>
               </div>
               <div class="cat-content">
-                <h6><a href="#">Domain</a></h6>
+                <h6><a href="<%=root_path %>">Domain</a></h6>
               </div>
             </div>
           </div>
@@ -996,7 +996,7 @@
             </div>
 
             <div class="banner-btns d-flex flex-wrap justify-content-center">
-              <a href="signin.html" class="default-btn move-right"><span>Create Store</span>
+              <a href="<%= login_path %>" class="default-btn move-right"><span>Create Store</span>
               </a>
             </div>
             <div class="banner-cat mt-70">

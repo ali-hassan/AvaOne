@@ -21,7 +21,8 @@
             <div class="col-lg-5">
                 <div class="account-wrapper">
                     <h3 class="title">Sign Up</h3>
-                    <form class="account-form">
+
+                  <%= form_for @service.person, :url => APP_CONFIG.login_domain.to_s + people_path, class: "account-form" do |form| %>
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="userIdInput" placeholder="user-id">
                             <label for="userIdInput">User ID</label>
@@ -53,7 +54,7 @@
                         <div class="form-group">
                             <button class="d-block default-btn move-top"><span>Sign up Now</span></button>
                         </div>
-                    </form>
+                    <%end %>
                     <div class="account-bottom">
                             <span class="d-block cate pt-10">Already Have an Account? <a href="<%= login_path %>"> Sign
                                     In</a></span>
@@ -89,3 +90,54 @@
     </div>
 </div>
 <%= render "layouts/footer" %>
+
+
+<%#= form_for @service.person, :url => APP_CONFIG.login_domain.to_s + people_path do |form| %>
+  <%# # Invite code %>
+  <%# if @current_community.join_with_invite_only? %>
+<!--    <div class="inline-label-container">-->
+      <%#= label_tag :invitation_code, t('.invitation_code'), :class => "inline" %>
+      <%#= link_to(t('common.what_is_this'), "#", :tabindex => "-1", :id => "help_invitation_code_link", :class => "label-info") %>
+<!--    </div>-->
+    <%#= text_field_tag "invitation_code", nil, :class => :text_field, :maxlength => "20", :value => (params[:code] || "") %>
+  <%# elsif params[:code] %>
+    <%#= hidden_field_tag "invitation_code", params[:code] %>
+  <%# end %>
+  <%# # Honey pot: hidden field to detect spammers %>
+  <%#= form.label :input_again, "You should not see this field, if CSS is working. If you see this, please send feedback!", :class => "unwanted_text_field" %>
+  <%#= form.text_field :input_again, :class => "unwanted_text_field", :id => "error_regristration_unwanted_email2", :autocomplete => "off" %>
+  <%# # Email %>
+  <%#= form.label :email, t('.email') %>
+  <%#= form.text_field :email, :class => :text_field, :maxlength => "255" %>
+  <%# # Name %>
+  <%#= form.label :given_name, t('.given_name') %>
+  <%#= form.text_field :given_name, :class => :text_field, :maxlength => "30" %>
+  <%#= form.label :family_name, t('.family_name') %>
+  <%#= form.text_field :family_name, :class => :text_field, :maxlength => "30" %>
+  <%# # Password %>
+  <%#= form.label :password, t('common.password') %>
+  <%#= form.password_field :password, :class => :text_field, :maxlength => "255", :id => "person_password1" %>
+  <%#= form.label :password2, t('.password_again') %>
+  <%#= form.password_field :password2, :class => :text_field, :maxlength => "255" %>
+  <%# if @service.has_person_custom_fields? %>
+    <%# @service.custom_field_values.each_with_index do |custom_field_value, index| %>
+      <%# custom_field = custom_field_value.question %>
+      <%# custom_field.with_type do |field_type| %>
+        <%# prefix = "person[custom_field_values_attributes][]" %>
+<!--        <div class="inline-label-container">-->
+          <%#= label "person_custom_fields", index, custom_field.name(I18n.locale),class: 'inline' %>
+
+      <%# end %>
+      <%# if custom_field.public? %>
+<!--        <small>-->
+          <%#= t('.this_field_will_be_publicly_visible') %>
+<!--        </small>-->
+      <%# end %>
+<!--      </div>-->
+      <%#= hidden_field_tag "#{prefix}[id]", custom_field_value.id %>
+      <%#= hidden_field_tag "#{prefix}[type]", custom_field_value.type %>
+      <%#= hidden_field_tag "#{prefix}[custom_field_id]", custom_field_value.custom_field_id %>
+      <%#= render "settings/custom_fields/#{field_type}", :service => @service %>
+    <%# end %>
+  <%# end %>
+<%# end %>
