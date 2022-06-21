@@ -33,11 +33,11 @@
                             <label for="floatingInput">Email address</label>
                         </div>
                         <div class="form-floating mb-3">
-                          <%= form.text_field :password, :class => "form-control", :id => "floatingPassword", :autocomplete => "off", placeholder: 'Password' %>
+                          <%= form.text_field :password, :class => "form-control", :id => "floatingPassword", type: "password", :autocomplete => "off", placeholder: 'Password' %>
                             <label for="floatingPassword">Password</label>
                         </div>
                         <div class="form-floating mb-3">
-                          <%= form.text_field :password2, :class => "form-control", :id => "confirmPass", :autocomplete => "off", placeholder: 'Confirm Password' %>
+                          <%= form.text_field :password2, :class => "form-control", type: "password", :id => "confirmPass", :autocomplete => "off", placeholder: 'Confirm Password' %>
                             <label for="confirmPass">Confirm Password</label>
                         </div>
                         <div class="form-group">
