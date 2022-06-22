@@ -4,4 +4,8 @@ class AuthorsController < ApplicationController
   def index
 
   end
+
+  def all_authors
+
+  end
 end

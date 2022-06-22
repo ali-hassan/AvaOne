@@ -48,6 +48,7 @@ class PeopleController < Devise::RegistrationsController
   end
 
   def create
+    @current_community= Community.first
     domain = @current_community ? @current_community.full_url : "#{request.protocol}#{request.host_with_port}"
     error_redirect_path = domain + sign_up_path
 
@@ -63,22 +64,6 @@ class PeopleController < Devise::RegistrationsController
       redirect_to error_redirect_path and return
     end
 
-    if @current_community && @current_community.join_with_invite_only? || params[:invitation_code]
-
-      unless Invitation.code_usable?(params[:invitation_code], @current_community)
-        # abort user creation if invitation is not usable.
-        # (This actually should not happen since the code is checked with javascript)
-        session[:invitation_code] = nil # reset code from session if there was issues so that's not used again
-        ApplicationHelper.send_error_notification("Invitation code check did not prevent submiting form, but was detected in the controller", "Invitation code error")
-
-        # TODO: if this ever happens, should change the message to something else than "unknown error"
-        flash[:error] = t("layouts.notifications.unknown_error")
-        redirect_to error_redirect_path and return
-      else
-        invitation = Invitation.find_by_code(params[:invitation_code].upcase)
-      end
-    end
-
     return if email_not_valid(params, error_redirect_path)
 
     email = nil
@@ -92,18 +77,18 @@ class PeopleController < Devise::RegistrationsController
     end
 
     # Make person a member of the current community
-    if @current_community
-      membership = CommunityMembership.new(person: @person, community: @current_community, consent: @current_community.consent)
-      membership.status = "pending_email_confirmation"
-      membership.invitation = invitation if invitation.present?
-      membership.save!
-      session[:invitation_code] = nil
-    end
+    # if @current_community
+    #   membership = CommunityMembership.new(person: @person, community: @current_community, consent: @current_community.consent)
+    #   membership.status = "pending_email_confirmation"
+    #   membership.invitation = invitation if invitation.present?
+    #   membership.save!
+    #   session[:invitation_code] = nil
+    # end
 
     # If invite was used, reduce usages left
-    invitation.use_once! if invitation.present?
-
-    Delayed::Job.enqueue(CommunityJoinedJob.new(@person.id, @current_community.id)) if @current_community
+    # invitation.use_once! if invitation.present?
+    #
+    # Delayed::Job.enqueue(CommunityJoinedJob.new(@person.id, @current_community.id)) if @current_community
 
     record_event(flash, "SignUp", method: :email)
 
@@ -278,7 +263,7 @@ class PeopleController < Devise::RegistrationsController
     admin_emails_consent = params[:admin_emails_consent]
     person = Person.new
 
-    email = Email.new(:person => person, :address => params[:email].downcase, :send_notifications => true, community_id: current_community.id)
+    email = Email.new(:person => person, :address => params[:email].downcase, :send_notifications => true, community_id: 1)
     params.delete(:email)
 
     person = build_devise_resource_from_person(params)
@@ -301,6 +286,7 @@ class PeopleController < Devise::RegistrationsController
 
   def person_create_params(params)
     result = params.require(:person).slice(
+        :username,
         :given_name,
         :family_name,
         :display_name,
