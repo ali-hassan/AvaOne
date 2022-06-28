@@ -17,8 +17,8 @@
               <label for="floatingInput">Email address</label>
             </div>
             <div class="form-floating">
-              <input type="password" class="form-control" id="floatingPassword"
-                     placeholder="Password">
+<!--              <input type="password" class="form-control" id="floatingPassword"-->
+<!--                     placeholder="Password">-->
               <%= password_field_tag "person[password]", nil, type: "password", :class => "form-control", id: "floatingPassword",  placeholder: "Password" %>
               <label for="floatingPassword">Password</label>
             </div>
@@ -32,11 +32,11 @@
               </div>
             </div>
             <div class="form-group">
-              <button class="d-block default-btn move-top"><span>Sign in Now</span></button>
+              <button type="submit" class="d-block default-btn move-top"><span>Sign in Now</span></button>
             </div>
           <% end %>
           <div class="account-bottom">
-                            <span class="d-block cate pt-10">Don’t Have any Account? <a href="<%= login_path %>"> Sign
+                            <span class="d-block cate pt-10">Don’t Have any Account? <a href="<%= sign_up_path %>"> Sign
                                     Up</a></span>
             <span class="or"><span>or</span></span>
             <h5 class="subtitle">Login With Social Media</h5>

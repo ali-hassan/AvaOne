@@ -409,6 +409,7 @@ class Person < ApplicationRecord
   end
 
   def is_marketplace_admin?(community)
+    community = Community.first
     community_membership.community_id == community.id && community_membership.admin?
   end
 
