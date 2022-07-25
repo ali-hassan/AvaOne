@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   root to: 'dashboard#index'
   resources :ranks
   resources :authors
+  resources :nfts, only: [:new, :create, :index]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
