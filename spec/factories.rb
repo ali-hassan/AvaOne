@@ -53,6 +53,16 @@ class FactoryGirl::DefinitionProxy
 end
 
 FactoryGirl.define do
+  factory :nft do
+    name "MyString"
+    description "MyText"
+    category "MyString"
+    currency "MyString"
+    price "MyString"
+    royalities "MyString"
+    size "MyString"
+    copies ""
+  end
   sequence :id do |_|
     SecureRandom.urlsafe_base64
   end

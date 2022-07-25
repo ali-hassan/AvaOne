@@ -17,8 +17,13 @@
 #  updated_at  :datetime         not null
 #
 
-require 'rails_helper'
+class Nft < ApplicationRecord
+  belongs_to :person
+  has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" },
+                    :path => ":rails_root/public/system/mercury/images/:attachment/:id/:style/:filename",
+                    :url => "/system/:class/:attachment/:id/:style/:filename"
 
-RSpec.describe NftsController, type: :controller do
+  validates_attachment_content_type :image,
+                                    :content_type => IMAGE_CONTENT_TYPE
 
 end

@@ -22,7 +22,7 @@
         .col-lg-8
           / create item
           .create-nft.py-5.px-4
-            %form.create-nft-form
+            = form_for Nft.new, :html => {:multipart => true, class: "create-nft-form"} do |form|
               / upload field
               .upload-item.mb-30
                 %p
@@ -32,22 +32,24 @@
                   .file-btn
                     %i.icofont-upload-alt
                     Upload a file
-                  %input{:type => "file"}/
+                  = form.text_field :image, type: "file"
               / item name input
               .form-floating.item-name-field.mb-3
-                %input#itemNameInput.form-control{:placeholder => "Item Name", :type => "text"}/
+                = form.text_field :name, class: "form-control", id: "itemNameInput", placeholder: "Item Name", type: "text"
+                -#%input#itemNameInput.form-control{:placeholder => "Item Name", :type => "text"}
                 %label{:for => "itemNameInput"}
                   Item
                   Name
               / item-description
               .form-floating.item-desc-field.mb-30
-                %textarea#itemDesc.form-control{:placeholder => "Item Description"}
+                = form.text_area :name, class: "form-control", id: "itemDesc", placeholder: "Item Description", type: "text"
                 %label{:for => "itemDesc"}
                   Item
                   Description
               / item-category
               .item-category-field.mb-30
                 %h4 Select Item Catergory
+                = form.text_field :category, class: "form-control", id: "itemDesc", type: "text"
                 %ul.item-cat-list.d-flex.flex-wrap
                   %li.item-cat-btn.active
                     %span
@@ -125,7 +127,7 @@
                         of Copies
               / submit button
               .submit-btn-field.text-center
-                %button{:type => "submit"}
+                %button{:type => "submit", href: nfts_path}
                   Create
                   Item
 / ==========NFT sección final==========
