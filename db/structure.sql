@@ -1099,6 +1099,10 @@ CREATE TABLE `nfts` (
   `image` varchar(255) DEFAULT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL,
+  `image_file_name` varchar(255) DEFAULT NULL,
+  `image_content_type` varchar(255) DEFAULT NULL,
+  `image_file_size` int DEFAULT NULL,
+  `image_updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -2510,6 +2514,7 @@ INSERT INTO `schema_migrations` (version) VALUES
 ('20210129114823'),
 ('20210517131520'),
 ('20211124070123'),
-('20220725190904');
+('20220725190904'),
+('20220727203346');
 
 
