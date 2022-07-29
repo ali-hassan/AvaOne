@@ -11,6 +11,7 @@ class CreateNfts < ActiveRecord::Migration[5.2]
       t.integer :copies
       t.integer :person_id
       t.string :image
+      t.boolean :active
 
       t.timestamps
     end

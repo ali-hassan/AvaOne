@@ -1097,6 +1097,7 @@ CREATE TABLE `nfts` (
   `copies` int DEFAULT NULL,
   `person_id` int DEFAULT NULL,
   `image` varchar(255) DEFAULT NULL,
+  `active` tinyint(1) DEFAULT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL,
   `image_file_name` varchar(255) DEFAULT NULL,

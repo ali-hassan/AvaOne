@@ -13,6 +13,7 @@
 #  copies             :integer
 #  person_id          :integer
 #  image              :string(255)
+#  active             :boolean
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null
 #  image_file_name    :string(255)
