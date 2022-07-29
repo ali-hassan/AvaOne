@@ -8,7 +8,7 @@ class NftsController < ApplicationController
   end
 
   def create
-    @nft = Nft.new nft_params
+    @nft = Nft.new nft_params.merge(person_id: @current_user.id)
     @nft.save
     redirect_to root_path
   end

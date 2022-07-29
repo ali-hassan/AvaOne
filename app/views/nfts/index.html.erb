@@ -9,812 +9,105 @@
     <div class="section-wrapper">
       <div class="collection-wrapper collection-loadmore">
         <div class="row justify-content-center g-4">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/01.gif"
-                          alt="cat-image">
+          <% @nfts.each do |nft| %>
+            <div class="col-lg-4 col-md-6">
+              <div class="nft-item collection-item">
+                <div class="nft-inner">
+                  <div class="coll-thumb-wrapper">
+                    <div class="nft-coll-thumb ">
+                      <div class="thumb-list swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="single-thumb">
+                            <%=image_tag nft.image.path, alt: "cat-image"  %>
+                          </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/02.gif"
-                          alt="cat-image">
+                        <div class="swiper-slide">
+                          <div class="single-thumb"><%=image_tag nft.image.path, alt: "cat-image"  %>
+                          </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/03.gif"
-                          alt="cat-image">
+                        <div class="swiper-slide">
+                          <div class="single-thumb"><%=image_tag nft.image.path, alt: "cat-image"  %>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">Radium Animated Monster</a> </h5>
-                    <p>Collection has 13 items</p>
-                  </div>
-
-                  <div
-                    class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img
-                        src="assets/images/seller/collector-4.gif" alt="author-img"></a>
-                      <h6><a href="author.html">rasselmrh </a></h6>
+                  <div class="nft-content">
+                    <div class="collection-title">
+                      <h5><a href="author.html"><%= nft.name %></a> </h5>
+                      <p><%= nft.description %></p>
                     </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
+
+                    <div
+                      class="author-details d-flex flex-wrap justify-content-between align-items-center">
+                      <div class="single-author d-flex align-items-center">
+                        <a href="author.html" class="veryfied"><img
+                          src="<%= nft.image.path %>" alt="author-img"></a>
+                        <h6><a href="author.html"><%= nft.person.try(:display_name) %> </a></h6>
+                      </div>
+                      <span class="badge rounded-pill"><i class="icofont-heart"></i>
                       11.3k</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/001.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/002.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/003.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">Smart Owls</a> </h5>
-                    <p>Collection has 16+ items</p>
-                  </div>
-
-                  <div
-                    class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img
-                        src="assets/images/seller/collector-4.png" alt="author-img"></a>
-                      <h6><a href="author.html">night @are </a></h6>
-                    </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      4.3k</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/1.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/2.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/3.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">Digital CryptoArt</a> </h5>
-                    <p>Collection has 11 items</p>
-                  </div>
-
-                  <div
-                    class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img
-                        src="assets/images/seller/collector-3.gif" alt="author-img"></a>
-                      <h6><a href="author.html">Mimi_Chao </a></h6>
-                    </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      1.3k</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/04.gif"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/05.gif"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/06.gif"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">ZombieLand is alive</a> </h5>
-                    <p>Collection has 14+ items</p>
-                  </div>
-
-                  <div
-                    class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img
-                        src="assets/images/seller/collector-2.png" alt="author-img"></a>
-                      <h6><a href="author.html">@xar_spacer </a></h6>
-                    </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      4.3k</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/b1.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/b2.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/b3.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">Da Cute Monster</a> </h5>
-                    <p>Collection has 21 items</p>
-                  </div>
-
-                  <div
-                    class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img
-                        src="assets/images/seller/collector-2.gif" alt="author-img"></a>
-                      <h6><a href="author.html">monstaz </a></h6>
-                    </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      11.3k</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/h1.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/h2.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/h3.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">Super Herox</a> </h5>
-                    <p>Collection has 31 items</p>
-                  </div>
-
-                  <div
-                    class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img
-                        src="assets/images/seller/collector-5.png" alt="author-img"></a>
-                      <h6><a href="author.html">laurax orbo </a></h6>
-                    </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      3.1k</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/r1.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/r2.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/r3.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">Honey babeee</a> </h5>
-                    <p>Collection has 14+ items</p>
-                  </div>
-
-                  <div
-                    class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img
-                        src="assets/images/seller/collector-2.png" alt="author-img"></a>
-                      <h6><a href="author.html">@xar_spacer </a></h6>
-                    </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      4.3k</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/p1.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/p2.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/p3.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">My Pickachooz</a> </h5>
-                    <p>Collection has 15+ items</p>
-                  </div>
-
-                  <div
-                    class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img
-                        src="assets/images/seller/collector-3.png" alt="author-img"></a>
-                      <h6><a href="author.html">@pichasu </a></h6>
-                    </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      2.3k</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/o1.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/o2.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img
-                          src="assets/images/nft-item/category/o3.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">The Octopax</a> </h5>
-                    <p>Collection has 14+ items</p>
-                  </div>
-
-                  <div
-                    class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img
-                        src="assets/images/seller/collector-1.gif" alt="author-img"></a>
-                      <h6><a href="author.html">OktaX so </a></h6>
-                    </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      4.3k</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/01.gif" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/02.gif" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/03.gif" alt="cat-image">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">Radium Animated Monster</a> </h5>
-                    <p>Collection has 13 items</p>
-                  </div>
-
-                  <div class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img src="assets/images/seller/collector-4.gif"
-                        alt="author-img"></a>
-                      <h6><a href="author.html">rasselmrh </a></h6>
-                    </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      11.3k</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/001.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/002.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/003.jpg"
-                          alt="cat-image">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">Smart Owls</a> </h5>
-                    <p>Collection has 16+ items</p>
-                  </div>
-
-                  <div class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img src="assets/images/seller/collector-4.png"
-                        alt="author-img"></a>
-                      <h6><a href="author.html">night @are </a></h6>
-                    </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      4.3k</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/1.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/2.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/3.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">Digital CryptoArt</a> </h5>
-                    <p>Collection has 11 items</p>
-                  </div>
-
-                  <div class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img src="assets/images/seller/collector-3.gif"
-                        alt="author-img"></a>
-                      <h6><a href="author.html">Mimi_Chao </a></h6>
-                    </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      1.3k</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/04.gif" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/05.gif" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/06.gif" alt="cat-image">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">ZombieLand is alive</a> </h5>
-                    <p>Collection has 14+ items</p>
-                  </div>
-
-                  <div class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img src="assets/images/seller/collector-2.png"
-                        alt="author-img"></a>
-                      <h6><a href="author.html">@xar_spacer </a></h6>
-                    </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      4.3k</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/b1.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/b2.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/b3.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">Da Cute Monster</a> </h5>
-                    <p>Collection has 21 items</p>
-                  </div>
-
-                  <div class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img src="assets/images/seller/collector-2.gif"
-                        alt="author-img"></a>
-                      <h6><a href="author.html">monstaz </a></h6>
-                    </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      11.3k</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/h1.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/h2.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/h3.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">Super Herox</a> </h5>
-                    <p>Collection has 31 items</p>
-                  </div>
-
-                  <div class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img src="assets/images/seller/collector-5.png"
-                        alt="author-img"></a>
-                      <h6><a href="author.html">laurax orbo </a></h6>
-                    </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      3.1k</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/r1.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/r2.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/r3.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">Honey babeee</a> </h5>
-                    <p>Collection has 14+ items</p>
-                  </div>
-
-                  <div class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img src="assets/images/seller/collector-2.png"
-                        alt="author-img"></a>
-                      <h6><a href="author.html">@xar_spacer </a></h6>
-                    </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      4.3k</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/p1.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/p2.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/p3.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">My Pickachooz</a> </h5>
-                    <p>Collection has 15+ items</p>
-                  </div>
-
-                  <div class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img src="assets/images/seller/collector-3.png"
-                        alt="author-img"></a>
-                      <h6><a href="author.html">@pichasu </a></h6>
-                    </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      2.3k</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="nft-item collection-item">
-              <div class="nft-inner">
-                <div class="coll-thumb-wrapper">
-                  <div class="nft-coll-thumb ">
-                    <div class="thumb-list swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/o1.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/o2.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="single-thumb"><img src="assets/images/nft-item/category/o3.jpg" alt="cat-image">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nft-content">
-                  <div class="collection-title">
-                    <h5><a href="author.html">The Octopax</a> </h5>
-                    <p>Collection has 14+ items</p>
-                  </div>
-
-                  <div class="author-details d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="single-author d-flex align-items-center">
-                      <a href="author.html" class="veryfied"><img src="assets/images/seller/collector-1.gif"
-                        alt="author-img"></a>
-                      <h6><a href="author.html">OktaX so </a></h6>
-                    </div>
-                    <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      4.3k</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <% end %>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!--<div class="col-lg-4 col-md-6">-->
+<!--  <div class="nft-item collection-item">-->
+<!--    <div class="nft-inner">-->
+<!--      <div class="coll-thumb-wrapper">-->
+<!--        <div class="nft-coll-thumb ">-->
+<!--          <div class="thumb-list swiper-wrapper">-->
+<!--            <div class="swiper-slide">-->
+<!--              <div class="single-thumb"><img-->
+<!--                src="assets/images/nft-item/category/001.jpg"-->
+<!--                alt="cat-image">-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="swiper-slide">-->
+<!--              <div class="single-thumb"><img-->
+<!--                src="assets/images/nft-item/category/002.jpg"-->
+<!--                alt="cat-image">-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="swiper-slide">-->
+<!--              <div class="single-thumb"><img-->
+<!--                src="assets/images/nft-item/category/003.jpg"-->
+<!--                alt="cat-image">-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="nft-content">-->
+<!--        <div class="collection-title">-->
+<!--          <h5><a href="author.html">Smart Owls</a> </h5>-->
+<!--          <p>Collection has 16+ items</p>-->
+<!--        </div>-->
+
+<!--        <div-->
+<!--          class="author-details d-flex flex-wrap justify-content-between align-items-center">-->
+<!--          <div class="single-author d-flex align-items-center">-->
+<!--            <a href="author.html" class="veryfied">-->
+            <%#= image_tag "nft-item/category/003.jpg" %>
+<!--            </a>-->
+<!--            <h6><a href="author.html">night @are </a></h6>-->
+<!--          </div>-->
+<!--          <span class="badge rounded-pill"><i class="icofont-heart"></i>-->
+<!--                      4.3k</span>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
 <!-- ===============//Colección sección final \\================= -->
 <% render "layouts/footer" %>
