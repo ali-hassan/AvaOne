@@ -11,7 +11,8 @@
 #  royalities         :string(255)
 #  size               :string(255)
 #  copies             :integer
-#  person_id          :integer
+#  person_id          :string(255)
+#  person_uuid        :string(255)
 #  image              :string(255)
 #  active             :boolean
 #  created_at         :datetime         not null

@@ -9,7 +9,8 @@ class CreateNfts < ActiveRecord::Migration[5.2]
       t.string :royalities
       t.string :size
       t.integer :copies
-      t.integer :person_id
+      t.string :person_id
+      t.string :person_uuid
       t.string :image
       t.boolean :active
 

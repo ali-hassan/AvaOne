@@ -42,7 +42,7 @@
                   Name
               / item-description
               .form-floating.item-desc-field.mb-30
-                = form.text_area :name, class: "form-control", id: "itemDesc", placeholder: "Item Description", type: "text"
+                = form.text_area :description, class: "form-control", id: "itemDesc", placeholder: "Item Description", type: "text"
                 %label{:for => "itemDesc"}
                   Item
                   Description
@@ -88,7 +88,7 @@
                 .row.g-3
                   .col-md-6
                     .form-floating
-                      = form.select :currency, ['Select Currency', 'Ethereum', 'BitCoin', 'Dollar', 'Pound'], class: "form-select", id: "selectCrypto", placeholder: 'Item Price'
+                      = form.select :currency, ['Select Currency', 'Ethereum', 'BitCoin', 'Dollar', 'Pound'], {}, {:class => "form-select", id: "selectCrypto" }
                       -#%select#selectCrypto.form-select{"aria-label" => "Floating label select"}
                       -#  %option{:selected => "selected"}
                       -#    Ethereum
