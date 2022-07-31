@@ -6,4 +6,16 @@ class DashboardController < ApplicationController
     # end
 
   end
+
+  def policy
+
+  end
+
+  def terms
+
+  end
+
+  def contact
+
+  end
 end
