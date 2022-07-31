@@ -18,7 +18,7 @@
           <div class="banner-btns d-flex flex-wrap justify-content-center">
             <a href="<%=authors_path %>" class="default-btn move-top"><span>Explore
                                         Now</span> </a>
-            <a href="<%=login_path %>" class="default-btn style-2 move-right"><span>Create NFT</span>
+            <a href="<%= logged_in? ? new_nft_path : login_path %>" class="default-btn style-2 move-right"><span>Create NFT</span>
             </a>
           </div>
         </div>
@@ -639,7 +639,7 @@
   <div class="container">
     <div class="section-header">
       <h3 class="header-title">Popular Collection</h3>
-      <div class="header-content"><a href="collections.html"
+      <div class="header-content"><a href="<%=nfts_path %>"
                                      class="default-btn style-2 small-btn move-right"><span>View All
                             <i class="icofont-circled-right"></i></span></a> </div>
     </div>

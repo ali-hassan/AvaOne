@@ -7,8 +7,24 @@ Rails.application.routes.draw do
 
   mount Mercury::Engine => '/'
   root to: 'dashboard#index'
+
+  resources :dashboard do
+    collection do
+      get 'terms', to: 'dashboard#terms', as: :terms
+      get 'policy', to: 'dashboard#policy', as: :policy
+      get 'contact', to: 'dashboard#policy'
+    end
+  end
   resources :ranks
-  resources :authors
+  resources :authors do
+    collection do
+      get :all_authors
+    end
+  end
+  resources :activity
+  resources :helps, only: :index
+  resources :nfts, only: [:new, :create, :index]
+  resources :wallets, only: [:index]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

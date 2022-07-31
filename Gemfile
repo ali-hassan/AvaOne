@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.7.5'
+ruby '2.6.5'
 
 gem 'rails', '5.2.6'
 
@@ -30,6 +30,7 @@ gem 'delayed_paperclip', '~> 3.0.1'
 # Active Storage
 gem 'image_processing', '~> 1.9.3'
 gem 'mini_magick', '~> 4.9.5'
+# gem 'mini_racer', '>=0.2.1'
 
 gem 'aws-sdk-s3', '~> 1.48'
 gem 'aws-sdk-ses', '~> 1.34'
@@ -201,3 +202,6 @@ group :deployment do
   gem 'capistrano3-puma',   require: false
   gem 'capistrano-npm'
 end
+gem 'therubyracer', :platform => :ruby
+gem 'libv8'
+#bundle update libv8 mini_racer

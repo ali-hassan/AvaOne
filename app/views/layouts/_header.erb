@@ -26,9 +26,9 @@
                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">NFTs</a>
 
             <ul class="dropdown-menu header__nav-menu">
-              <li><a class="drop-down-item" href="create-nft.html">Create NFT</a></li>
-              <li><a class="drop-down-item" href="collections.html"> NFT Collection</a></li>
-              <li><a class="drop-down-item" href="wallet.html"> Wallet</a></li>
+              <li><a class="drop-down-item" href="<%= logged_in? ? new_nft_path : login_path %>">Create NFT</a></li>
+              <li><a class="drop-down-item" href="<%=nfts_path %>"> NFT Collection</a></li>
+              <li><a class="drop-down-item" href="<%= wallets_path %>"> Wallet</a></li>
 
             </ul>
           </li>
@@ -37,8 +37,8 @@
                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">Marketplace</a>
 
             <ul class="dropdown-menu header__nav-menu">
-              <li><a class="drop-down-item" href="all-authors.html">NFTs Marketplace</a></li>
-              <li><a class="drop-down-item" href="all-authors-2.html">Tangible Marketplace</a></li>
+              <li><a class="drop-down-item" href="<%=authors_path %>">NFTs Marketplace</a></li>
+              <li><a class="drop-down-item" href="<%= all_authors_authors_path %>">Tangible Marketplace</a></li>
 
             </ul>
           </li>
@@ -47,10 +47,10 @@
                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">Support +</a>
 
             <ul class="dropdown-menu header__nav-menu">
-              <li><a class="drop-down-item" href="help.html">Help Center</a></li>
-              <li><a class="drop-down-item" href="policy.html">Privacy & Policy</a></li>
-              <li><a class="drop-down-item" href="terms.html">Terms & Condition</a></li>
-              <li><a class="drop-down-item" href="contact.html">Contact</a></li>
+              <li><a class="drop-down-item" href="<%= helps_path %>">Help Center</a></li>
+              <li><a class="drop-down-item" href="<%= policy_dashboard_index_path %>">Privacy & Policy</a></li>
+              <li><a class="drop-down-item" href="<%= terms_dashboard_index_path %>">Terms & Condition</a></li>
+              <li><a class="drop-down-item" href="<%= contact_dashboard_index_path %>">Contact</a></li>
 
             </ul>
 
@@ -72,17 +72,17 @@
             </a>
 
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="author.html"><span class="me-1"><i
+              <li><a class="dropdown-item" href="<%=authors_path %>"><span class="me-1"><i
                 class="icofont-options"></i></span>
                 Edit Profile</a></li>
-              <li><a class="dropdown-item" href="activity.html"><span class="me-1"><i
+              <li><a class="dropdown-item" href="<%= activity_index_path %>"><span class="me-1"><i
                 class="icofont-lightning-ray"></i></span>
                 Activity</a></li>
-              <li><a class="dropdown-item" href="signup.html"><span class="me-1"><i
+              <li><a class="dropdown-item" href="<%=sign_up_path %>"><span class="me-1"><i
                 class="icofont-space-shuttle"></i></span>
                 Sign
                 Up</a></li>
-              <li><a class="dropdown-item" href="signin.html"><span class="me-1"><i
+              <li><a class="dropdown-item" href="<%=login_path %>"><span class="me-1"><i
                 class="icofont-login"></i></span> Sign
                 In</a></li>
               <li>
@@ -95,7 +95,7 @@
           </div>
         </div>
         <div class="wallet-btn">
-          <a href="wallet.html"><span><i class="icofont-wallet" data-blast="color"></i></span> <span
+          <a href="<%=wallets_path %>"><span><i class="icofont-wallet" data-blast="color"></i></span> <span
             class="d-none d-md-inline">234.98ETH</span> </a>
         </div>
       </div>

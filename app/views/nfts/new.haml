@@ -1,0 +1,135 @@
+= render "layouts/header"
+/ ==========principal sección inicio==========
+%section.page-header-section.style-1
+  .container
+    .page-header-content
+      .page-header-inner
+        .page-title
+          %h2
+            %big
+              Create NFT
+              %big
+        %ol.breadcrumb
+          %li
+            %a{:href => "index.html"} Home
+          %li.active Create NFT
+/ ==========principal sección final==========
+/ ==========NFT sección inicio==========
+%section.create-nft-section.padding-bottom.padding-top
+  .container
+    .section-wrapper
+      .row.justify-content-center
+        .col-lg-8
+          / create item
+          .create-nft.py-5.px-4
+            = form_for Nft.new, :html => {:multipart => true, class: "create-nft-form"} do |form|
+              / upload field
+              .upload-item.mb-30
+                %p
+                  PNG,JPG,JPEG,SVG,WEBP,Mp3 & Mp4
+                  (Max-150mb)
+                .custom-upload
+                  .file-btn
+                    %i.icofont-upload-alt
+                    Upload a file
+                  = form.text_field :image, type: "file"
+              / item name input
+              .form-floating.item-name-field.mb-3
+                = form.text_field :name, class: "form-control", id: "itemNameInput", placeholder: "Item Name", type: "text"
+                -#%input#itemNameInput.form-control{:placeholder => "Item Name", :type => "text"}
+                %label{:for => "itemNameInput"}
+                  Item
+                  Name
+              / item-description
+              .form-floating.item-desc-field.mb-30
+                = form.text_area :description, class: "form-control", id: "itemDesc", placeholder: "Item Description", type: "text"
+                %label{:for => "itemDesc"}
+                  Item
+                  Description
+              / item-category
+              .item-category-field.mb-30
+                %h4 Select Item Catergory
+                %ul.item-cat-list.d-flex.flex-wrap
+                  %li.item-cat-btn.active
+                    %span
+                      %i.icofont-vector-path
+                    Art
+                  %li.item-cat-btn
+                    %span
+                      %i.icofont-penalty-card
+                    Cards
+                  %li.item-cat-btn
+                    %span
+                      %i.icofont-ui-game
+                    Gaming
+                  %li.item-cat-btn
+                    %span
+                      %i.icofont-music-disk
+                    Music
+                  %li.item-cat-btn
+                    %span
+                      %i.icofont-twitter
+                    Tweets
+                  %li.item-cat-btn
+                    %span
+                      %i.icofont-bill
+                    Rare Item
+                  %li.item-cat-btn
+                    %span
+                      %i.icofont-box
+                    Collectibles
+                  %li.item-cat-btn
+                    %span
+                      %i.icofont-gift
+                    NFT
+                    Gifts
+              / item price
+              .item-price-field.mb-3
+                .row.g-3
+                  .col-md-6
+                    .form-floating
+                      = form.select :currency, ['Select Currency', 'Ethereum', 'BitCoin', 'Dollar', 'Pound'], {}, {:class => "form-select", id: "selectCrypto" }
+                      -#%select#selectCrypto.form-select{"aria-label" => "Floating label select"}
+                      -#  %option{:selected => "selected"}
+                      -#    Ethereum
+                      -#  %option{:value => "1"}
+                      -#    BitCoin
+                      -#  %option{:value => "2"}
+                      -#    Dollar
+                      -#  %option{:value => "3"}
+                      -#    Pound
+                      -#%label{:for => "selectCrypto"}
+                      -#  Select
+                      -#  Currency
+                  .col-md-6
+                    .form-floating
+                      = form.text_field :price, class: "form-control", id: "itemPriceInput", type: "text", placeholder: 'Item Price'
+                      %label{:for => "itemPriceInput"}
+                        Item
+                        Price
+              / Royalites, Size & copy
+              .item-price-field.mb-5
+                .row.g-3.justify-content-center
+                  .col-md-6.col-lg-4
+                    .form-floating
+                      = form.text_field :royalities, class: "form-control", id: "royalityInput", type: "text", placeholder: 'Royalities'
+                      %label{:for => "royalityInput"} Royalities
+                  .col-md-6.col-lg-4
+                    .form-floating
+                      = form.text_field :size, class: "form-control", id: "sizeInput", type: "text", placeholder: 'Size'
+                      %label{:for => "sizeInput"}
+                        Size
+                  .col-md-6.col-lg-4
+                    .form-floating
+                      = form.text_field :copies, class: "form-control", id: "itemNumbersInput", type: "text", placeholder: 'Number of Copies'
+                      %label{:for => "itemNumbersInput"}
+                        Number
+                        of Copies
+              / submit button
+              .submit-btn-field.text-center
+                %button{:type => "submit"}
+                  Create
+                  Item
+/ ==========NFT sección final==========
+/ ===============//footer inicio \\=================
+= render "layouts/footer"
