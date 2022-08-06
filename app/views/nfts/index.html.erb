@@ -36,7 +36,7 @@
                   <div class="nft-content">
                     <div class="collection-title">
                       <h5><a href="author.html"><%= nft.name %></a> </h5>
-                      <p>Collection has <%= nft.created_nfts %> items</p>
+                      <p><%=nft.person.display_name || "#{nft.person.given_name } #{nft.person.family_name}"%> has <%= nft.created_nfts %> items</p>
                       <p><%= nft.description %></p>
                     </div>
 
@@ -48,7 +48,7 @@
                         <h6><a href="author.html"><%= nft.person.try(:display_name) %> </a></h6>
                       </div>
                       <span class="badge rounded-pill"><i class="icofont-heart"></i>
-                      11.3k</span>
+                      <%= nft.likes.count %></span>
                     </div>
                   </div>
                 </div>
