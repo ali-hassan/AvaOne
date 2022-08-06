@@ -53,6 +53,12 @@ class FactoryGirl::DefinitionProxy
 end
 
 FactoryGirl.define do
+  factory :like do
+    person_id "MyString"
+    nft_id 1
+    unlike false
+    status false
+  end
   factory :nft do
     name "MyString"
     description "MyText"

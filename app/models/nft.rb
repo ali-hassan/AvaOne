@@ -32,9 +32,8 @@ class Nft < ApplicationRecord
   validates_attachment_content_type :image,
                                     :content_type => IMAGE_CONTENT_TYPE
 
-
+  has_many :likes
   def created_nfts
-    debugger
     person.nfts.count rescue 0
   end
 

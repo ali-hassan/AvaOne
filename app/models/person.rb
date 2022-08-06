@@ -128,6 +128,7 @@ class Person < ApplicationRecord
   has_many :payer_stripe_payments, :class_name => "StripePayment", :foreign_key => "payer_id", :dependent => :destroy, :inverse_of => :payer
   has_many :receiver_stripe_payments, :class_name => "StripePayment", :foreign_key => "receiver_id", :dependent => :destroy, :inverse_of => :receiver
   has_many :nfts
+  has_many :likes
   deprecate communities: "Use accepted_community instead.",
             community_memberships: "Use community_membership instead.",
             deprecator: MethodDeprecator.new

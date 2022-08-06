@@ -746,6 +746,20 @@ CREATE TABLE `landing_pages` (
   UNIQUE KEY `index_landing_pages_on_community_id` (`community_id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
+DROP TABLE IF EXISTS `likes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `likes` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `person_id` varchar(255) DEFAULT NULL,
+  `nft_id` int DEFAULT NULL,
+  `unlike` tinyint(1) DEFAULT NULL,
+  `status` tinyint(1) DEFAULT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `listing_blocked_dates`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
@@ -2517,6 +2531,7 @@ INSERT INTO `schema_migrations` (version) VALUES
 ('20210517131520'),
 ('20211124070123'),
 ('20220725190904'),
-('20220727203346');
+('20220727203346'),
+('20220806081815');
 
 
