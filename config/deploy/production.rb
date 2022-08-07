@@ -1,6 +1,6 @@
-server 'ubuntu@3.8.120.129', user: 'ubuntu', roles: %w{web app db}, my_property: :my_value
+server 'ubuntu@3.19.196.192', user: 'ubuntu', roles: %w{web app db}, my_property: :my_value
 
-server '3.8.120.129',
+server '3.19.196.192',
        user: 'ubuntu',
        roles: %w{web app db},
        ssh_options: {
@@ -20,5 +20,5 @@ namespace :paths do
   end
 end
 
-ask :branch, 'development'
+ask :branch, 'master'
 # set :npm_flags, '--staging' # default
