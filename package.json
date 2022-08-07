@@ -11,5 +11,12 @@
   "cacheDirectories": [
     "node_modules",
     "client/node_modules"
-  ]
+  ],
+  "devDependencies": {
+    "babel-plugin-transform-es2015-shorthand-properties": "^6.24.1"
+  },
+  "dependencies": {
+    "terser": "^5.14.2",
+    "uglify-js-es6": "^2.8.9"
+  }
 }

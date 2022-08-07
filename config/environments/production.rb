@@ -95,11 +95,12 @@ Rails.application.configure do
        }]
     end
 
-  # Compress JavaScript and CSS
-  config.assets.js_compressor = :uglifier
+
 
   # Don't fallback to assets pipeline
-  config.assets.compile = false
+  config.assets.compile = true
+  config.assets.compress = true
+  config.assets.precompile[0] =  Proc.new{ |path| !File.extname(path).in?(['.js', '.css']) }
 
   # Generate digests for assets URLs
   config.assets.digest = true
@@ -108,6 +109,8 @@ Rails.application.configure do
 
   # Disable delivery errors, bad email addresses will be ignored
   config.action_mailer.raise_delivery_errors = true
+  # Compress JavaScript and CSS
+  config.assets.js_compressor = Uglifier.new(harmony: true)
 
   # Enable threaded mode
   # config.threadsafe!
