@@ -91,7 +91,7 @@ gem 'faraday', '~> 0.13.0'
 gem 'faraday_middleware', '~> 0.11.0'
 gem 'faraday-encoding', '~> 0.0.4'
 
-gem "react_on_rails", ">= 11.3.0"
+gem "react_on_rails", "= 11.3.0"
 
 gem 'sitemap_generator', '~> 5.3.1'
 
