@@ -406,12 +406,13 @@ class Person < ApplicationRecord
   end
 
   def consent
-    community_membership.consent
+    community_membership.try(:consent)
   end
 
   def is_marketplace_admin?(community)
-    community = Community.first
-    community_membership.community_id == community.id && community_membership.admin?
+    # community = Community.first
+    # community_membership.community_id == community.id && community_membership.admin?
+    false
   end
 
   def has_admin_rights?(community)
@@ -437,7 +438,8 @@ class Person < ApplicationRecord
   end
 
   def banned?
-    community_membership.banned?
+    # community_membership.banned?
+    false
   end
 
   def has_email?(address)

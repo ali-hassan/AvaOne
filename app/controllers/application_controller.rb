@@ -189,7 +189,7 @@ class ApplicationController < ActionController::Base
     # Admin can access
     return if @current_user.is_admin?
 
-    if @current_user.community_membership.pending_consent?
+    if @current_user.community_membership.try(:pending_consent?)
       redirect_to pending_consent_path
     end
   end
@@ -338,7 +338,7 @@ class ApplicationController < ActionController::Base
     # Admin can access
     return if @current_user.is_admin?
 
-    if @current_user.community_membership.pending_email_confirmation?
+    if @current_user.try(:community_membership).try(:pending_email_confirmation?)
       # Check if requirements are already filled, but the membership just hasn't been updated yet
       # (This might happen if unexpected error happens during page load and it shouldn't leave people in loop of of
       # having email confirmed but not the membership)
