@@ -1,6 +1,6 @@
-# Contributing to Sharetribe
+# Contributing to Ava
 
-First of all, thank you so much! We greatly appreciate all contributions. However, before you spend time working on Sharetribe, please read over our guidelines:
+First of all, thank you so much! We greatly appreciate all contributions. However, before you spend time working on Ava, please read over our guidelines:
 
 ## Reporting issues
 

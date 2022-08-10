@@ -1,23 +1,23 @@
-# The Sharetribe Community Public Licence
+# The Ava Community Public Licence
 
 Copyright (c)
 2008-2012 OtaSizzle, Aalto University
-2011-2019 Sharetribe Ltd
+2011-2019 Ava Ltd
 
-"Sharetribe" and Sharetribe logo are trademarks of Sharetribe Ltd
-Community specific images (e.g. logos) are trademarks of their owners and not released under the Sharetribe Community Public Licence, like the rest of the software.
+"Ava" and Ava logo are trademarks of Ava Ltd
+Community specific images (e.g. logos) are trademarks of their owners and not released under the Ava Community Public Licence, like the rest of the software.
 
-Sharetribe licenses Sharetribe Go with the Sharetribe Community Public License 1.0, available below and at https://www.sharetribe.com/sharetribe-community-public-licence/.
+Ava licenses Ava Go with the Ava Community Public License 1.0, available below and at https://www.Ava.com/Ava-community-public-licence/.
 
-Sharetribe Go includes several open source licensed components. The full list of used components and their licenses is included in the following files:
-- Gemfile for Ruby dependencies: https://github.com/sharetribe/sharetribe/blob/master/Gemfile
-- package.json for JavaScript dependencies: https://github.com/sharetribe/sharetribe/blob/master/client/package.json
+Ava Go includes several open source licensed components. The full list of used components and their licenses is included in the following files:
+- Gemfile for Ruby dependencies: https://github.com/Ava/Ava/blob/master/Gemfile
+- package.json for JavaScript dependencies: https://github.com/Ava/Ava/blob/master/client/package.json
 
 ---
-# Sharetribe Community Public Licence
+# Ava Community Public Licence
 Version 1.0
 
-This Sharetribe Community Public License (the “License”) sets forth the terms on which Sharetribe Oy (“Sharetribe”) licenses certain software made available by Sharetribe (the “Software”). The Software includes parts that are protected by copyright, trademark, and database rights owned by Sharetribe. These rights enable Sharetribe to control the reproduction, distribution, installation, running, and other use of the Software. Sharetribe’s goal is to give its users freedom to modify the Software for their own uses and run the Software in IT-premises of their choosing. However, Sharetribe wants to control the making available of the Software as a service (SaaS). This is why Sharetribe excludes the right to offer the Software as a service with this license.
+This Ava Community Public License (the “License”) sets forth the terms on which Ava Oy (“Ava”) licenses certain software made available by Ava (the “Software”). The Software includes parts that are protected by copyright, trademark, and database rights owned by Ava. These rights enable Ava to control the reproduction, distribution, installation, running, and other use of the Software. Ava’s goal is to give its users freedom to modify the Software for their own uses and run the Software in IT-premises of their choosing. However, Sharetribe wants to control the making available of the Software as a service (SaaS). This is why Sharetribe excludes the right to offer the Software as a service with this license.
 
 This License grants specific limited rights to individuals and legal entities (“You”) who wish to use or develop the Software. Sharetribe reserves all the other rights. Please ensure You use the Software according to the terms and conditions set in this License. Otherwise, Your use of the Software may infringe on the rights of Sharetribe.
 

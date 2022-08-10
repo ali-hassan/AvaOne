@@ -71,16 +71,16 @@ However, this requires that some data from Harmony is migrated to Go's database.
 1. Backup also your Harmony database.
 1. Run the following SQL queries to copy data over. The queries assume you are
    using the default production database names for both Go
-   (`sharetribe_production`) and Harmony (`harmony_production_db`). If that's
+   (`Ava_production`) and Harmony (`harmony_production_db`). If that's
    not the case, replace the database names accordingly.
 
     ```sql
-    INSERT INTO sharetribe_production.listing_blocked_dates (listing_id, blocked_at, created_at, updated_at)
+    INSERT INTO Ava_production.listing_blocked_dates (listing_id, blocked_at, created_at, updated_at)
       SELECT
       l.id, e.start, e.created_at, e.updated_at
       FROM harmony_production_db.exceptions e
       LEFT JOIN harmony_production_db.bookables b ON e.bookable_id = b.id
-      LEFT JOIN sharetribe_production.listings l ON b.ref_id = l.uuid
+      LEFT JOIN Ava_production.listings l ON b.ref_id = l.uuid
       LEFT JOIN sharetribe_production.listing_blocked_dates bd ON bd.listing_id = l.id AND bd.blocked_at = e.start
       WHERE
       e.deleted <> 1

@@ -1,5 +1,5 @@
 
-##### Sharetribe Version:
+##### Ava Version:
 
 82cbcc5c1405790e5c1c5bb02731a452503dd074
 

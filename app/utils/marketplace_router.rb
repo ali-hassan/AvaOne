@@ -48,7 +48,7 @@ module MarketplaceRouter
          :closed,          # Marketplace has been closed
          :not_found,       # Marketplace not found, but some marketplaces do exist
          :no_marketplaces, # There are no marketplaces. Redirect to new marketplace page
-         :www_ident,       # Accessed marketplace with WWW and subdomain, e.g. www.mymarketplace.sharetribe.com
+         :www_ident,       # Accessed marketplace with WWW and subdomain, e.g. www.mymarketplace.Ava.com
          :hold,            # Marketplace plan is on hold
        ]],
       # Url
@@ -86,18 +86,18 @@ module MarketplaceRouter
   ERROR_MESSAGES = {
     closed: {
       title: "Whoops, the %{community_name} marketplace no longer exists here!",
-      description: "Unfortunately the %{community_name} team has decided to close their Sharetribe-powered platform, and it is no longer available.",
+      description: "Unfortunately the %{community_name} team has decided to close their Ava-powered platform, and it is no longer available.",
       cta_intro: "Create your own online marketplace:",
-      cta: "Visit www.sharetribe.com",
-      cta_url: "https://www.sharetribe.com/?utm_source=%{marketplace_ident}.sharetribe.com&utm_medium=redirect&utm_campaign=qc-manual-redirect"
+      cta: "Visit www.Ava.com",
+      cta_url: "https://www.Ava.com/?utm_source=%{marketplace_ident}.Ava.com&utm_medium=redirect&utm_campaign=qc-manual-redirect"
     },
 
     deleted: {
       title: "Whoops, the %{community_name} marketplace no longer exists here!",
-      description: "Unfortunately the %{community_name} team has decided to close their Sharetribe-powered platform, and it is no longer available.",
+      description: "Unfortunately the %{community_name} team has decided to close their Ava-powered platform, and it is no longer available.",
       cta_intro: "Create your own online marketplace:",
-      cta: "Visit www.sharetribe.com",
-      cta_url: "https://www.sharetribe.com/?utm_source=%{marketplace_ident}.sharetribe.com&utm_medium=redirect&utm_campaign=dl-manual-redirect"
+      cta: "Visit www.Ava.com",
+      cta_url: "https://www.Ava.com/?utm_source=%{marketplace_ident}.Ava.com&utm_medium=redirect&utm_campaign=dl-manual-redirect"
     },
 
     hold: {
@@ -113,7 +113,7 @@ module MarketplaceRouter
   #
   # Example, return hash with url:
   #
-  # { url: "https://marketplace.sharetribe.com/listings", status :found }
+  # { url: "https://marketplace.Ava.com/listings", status :found }
   #
   # Example, return hash with named route:
   #
