@@ -29,11 +29,11 @@ en:
     notice_banner: "Your marketplace Admin panel has been redesigned! Give it a try: <a href=\"%{url}\">visit your new Admin panel</a>."
     topnav:
       admin_menu: "Admin menu"
-      logo: "Sharetribe Go Admin Panel"
+      logo: "AVA Go Admin Panel"
       menu: Menu
       go_to_your: "Go to your"
       marketplace: Marketplace
-      avatar: "Sharetribe Go Admin"
+      avatar: "AVA Go Admin"
       logout: "Log out"
       marketplace_id: "Marketplace ID: %{id}"
     sidebar:
@@ -113,7 +113,7 @@ en:
       analytics:
         google: "Google Analytics"
         google_manager: "Google Tag Manager"
-        sharetribe: "Sharetribe analytics"
+        sharetribe: "AVA analytics"
       advanced:
         experimental: "New features"
         recaptcha: reCAPTCHA
@@ -125,27 +125,27 @@ en:
       info_text: "Add Google's reCAPTCHA solution to stops bots signing up and contacting you while approving valid users. This adds a \"I'm not a robot\" checkbox that users must click to indicate that they are not a robot. This will either pass the user immediately or challenge them to validate whether or not they are human."
       info_text_2: "The checkbox is added to the Sign-up page and the Contact us page, for users who are not logged in. <a class=\"external-link\" href=\"%{url}\" target=\"_blank\">Learn more about the reCAPTCHA setup</a>."
     domain:
-      sharetribe_domain: "Sharetribe domain"
+      sharetribe_domain: "AVA domain"
       custom_domain: "Custom domain"
-      your_sharetribe_domain: "Your Sharetribe domain"
+      your_sharetribe_domain: "Your AVA domain"
       pro_feature: "Pro feature:"
       pro_upgrade: "Would you like to configure your own custom domain? <a href=\"%{url}\" target=\"_blank\">Upgrade to the Pro plan or higher</a>."
-      domain_validate_info: "Only letters, numbers and hyphens are allowed. If you change your Sharetribe domain, your old domain will become available and it will not redirect to your new Sharetribe domain."
+      domain_validate_info: "Only letters, numbers and hyphens are allowed. If you change your AVA domain, your old domain will become available and it will not redirect to your new AVA domain."
       domain_validate_info_2: "Only letters, numbers and hyphens are allowed. You can use a root domain (example.com) or a subdomain (marketplace.example.com)."
-      domain_adress: "Your Sharetribe marketplace domain is <a href=\"%{url}\">%{url}</a>."
-      domain_used_info: "Your Sharetribe marketplace domain <a href=\"%{url}\">%{url}</a> is redirected to your custom domain <a href=\"%{url_redirect}\">%{url_redirect}</a>."
+      domain_adress: "Your AVA marketplace domain is <a href=\"%{url}\">%{url}</a>."
+      domain_used_info: "Your AVA marketplace domain <a href=\"%{url}\">%{url}</a> is redirected to your custom domain <a href=\"%{url_redirect}\">%{url_redirect}</a>."
       your_marketplace_domain: "Your marketplace domain is <a href=\"%{url}\">%{url}</a>."
       configured_successfully: "%{domain} has been configured successfully."
       would_you_like_to_change_domain: "Would you like to change your marketplace custom domain? <a href=\"#\" show-intercom=true >Contact the Sharetribe team</a>."
       other_settings: "Check your additional custom domain settings"
-      change_sharetribe_domain: "You can't change the Sharetribe domain when the custom domain feature is enabled."
-      not_change_sharetribe_domain: "Would you like to change your Sharetribe domain? <a href=\"#\" show-intercom=true >Contact the Sharetribe team</a>."
+      change_sharetribe_domain: "You can't change the AVA domain when the custom domain feature is enabled."
+      not_change_sharetribe_domain: "Would you like to change your AVA domain? <a href=\"#\" show-intercom=true >Contact the Sharetribe team</a>."
       testing_dns: "Status: Testing DNS settings for %{url}…"
       setup_domain_info: "You can use a root domain (example.com) or a subdomain (marketplace.example.com)."
       test_dns_settings: "Test DNS settings and start using the custom domain"
       testing_dns_info: "Testing takes 10–15 minutes to complete. Refresh this page to check the status."
       during_dns_testing: "You can't change the custom domain during DNS testing."
-      set_custom_domain_info: "Your custom domain needs to point to Sharetribe's servers. Before you start the DNS settings test, make sure you have followed the <a class='external-link' href='%{url}' target='_blank'>instructions to point your domain to Sharetribe's servers</a>."
+      set_custom_domain_info: "Your custom domain needs to point to AVA's servers. Before you start the DNS settings test, make sure you have followed the <a class='external-link' href='%{url}' target='_blank'>instructions to point your domain to AVA's servers</a>."
       main_domain: "Main domain:"
       redirect: "Redirect:"
       success: Success!
@@ -169,13 +169,13 @@ en:
       domain_setup_failed: "Domain setup failed:"
       test_dns_popup:
         title: "Have DNS records for %{domain} been edited?"
-        info: "Have you configured your DNS records to have them pointing to Sharetribe's servers?"
+        info: "Have you configured your DNS records to have them pointing to AVA's servers?"
         info_2: "Due to technical limitations, you can test DNS settings once per 15 minutes."
         button: "Yes, DNS records are correct"
         button_2: "Yes, proceed with testing"
       domain_change_popup:
-        title: "Are you sure you want to change your Sharetribe domain?"
-        info_body: "When you change your Sharetribe domain, all marketplace URLs will automatically change and cause the following immediate changes:"
+        title: "Are you sure you want to change your AVA domain?"
+        info_body: "When you change your AVA domain, all marketplace URLs will automatically change and cause the following immediate changes:"
         point_1: "You'll be redirected to the new URL of your marketplace immediately."
         point_2: "You and your users will have to log in to your marketplace again."
         point_3: "Your previous domain will not be linked or redirected to the new domain."
@@ -184,7 +184,7 @@ en:
     outgoing_address:
       outgoing_email_settings: "Outgoing email settings"
       resend_verification_email: "Resend verification email"
-      upgrading: "<b>Pro feature:</b> Would you like to set your own email address as the sender and remove all Sharetribe branding from outgoing emails? <a href=\"%{url}\">Upgrade to the Pro plan or higher</a>."
+      upgrading: "<b>Pro feature:</b> Would you like to set your own email address as the sender and remove all AVA branding from outgoing emails? <a href=\"%{url}\">Upgrade to the Pro plan or higher</a>."
       info: "This sender name and email address is used for emails sent from your marketplace to users. <a href=\"%{url}\" class=\"external-link\" target=\"_blank\" >Learn more</a>."
       expired_notice_email: "The verification email sent to %{email} from Amazon Web Services has expired."
       expired_notice_link: "Please ask for a new one to verify your email address. %{link}."
@@ -224,24 +224,24 @@ en:
       block_1_point_4: "› Browse all Marketplace Academy articles"
       block_2:
         a_title: "Upgrade to Pro"
-        a_body: "Use your own domain, remove all Sharetribe branding, and more. Subscribe to a Pro plan, starting from $119 per month."
+        a_body: "Use your own domain, remove all AVA branding, and more. Subscribe to a Pro plan, starting from $119 per month."
         a_link: "› Manage your subscription"
         b_title: "Add a beautiful landing page to your marketplace"
         b_body: "Communicate your value proposition and engage your visitors the moment they arrive on your marketplace. Add a beautifully designed landing page to your marketplace. $99 per month."
         b_link: "› Learn more about the Custom Landing Page"
-        c_title: "Discover Sharetribe Flex"
-        c_body: "Take your marketplace business to the next level. Sharetribe Flex lets you build unique features and designs on top of powerful APIs. Start developing for free or get connected to a verified Flex expert."
-        c_link: "› Learn more about Sharetribe Flex"
+        c_title: "Discover AVA Flex"
+        c_body: "Take your marketplace business to the next level. AVA Flex lets you build unique features and designs on top of powerful APIs. Start developing for free or get connected to a verified Flex expert."
+        c_link: "› Learn more about AVA Flex"
       block_3: Help!
       block_3_body_1: "The support team's marketplace experts are here for you 7 days a week."
       bottom_text: "P.S. Have you listened to <a href=\"%{url}\" class=\"external-link\" rel=\"noopener\" target=\"_blank\">Two-sided: the marketplace podcast</a>?"
-      browse_sharetribe: "› Browse Sharetribe Go's Help Center"
+      browse_sharetribe: "› Browse AVA Go's Help Center"
       day_to_day: "Day-to-day:"
       transactions_conversations: "Transactions & conversations:"
       chat_with_us: "› Send us a message"
       online_payments: "Online payments:"
       what_new: "What's new:"
-      sharetribe_go_updates: "› Sharetribe Go updates"
+      sharetribe_go_updates: "› AVA updates"
       free_and_practical: "The practical step-by-step guide to building a successful online marketplace business"
       read_on: "› Read for free"
       manage_users: "› Manage users"
@@ -596,8 +596,8 @@ en:
       info_text_2: "Once you delete your marketplace, you will not be able to access it anymore. You can't undo this action."
       info_text_3: "Be careful."
       info_text_4: "After deletion, you and your marketplace users may still receive one last automatic newsletter from your marketplace."
-      info_text_5: "To permanently delete your marketplace, you must type your Sharetribe marketplace domain (%{domain}) in the text field below."
-      info_text_6: "One last thing before you delete your marketplace: is there anything we can do to help? Don't hesitate to <a href='#' show-intercom=true >contact the Sharetribe team</a> if you have any questions. We'll be happy to help you get the most of Sharetribe Go!"
+      info_text_5: "To permanently delete your marketplace, you must type your AVA marketplace domain (%{domain}) in the text field below."
+      info_text_6: "One last thing before you delete your marketplace: is there anything we can do to help? Don't hesitate to <a href='#' show-intercom=true >contact the AVA team</a> if you have any questions. We'll be happy to help you get the most of AVA Go!"
       delete: "Delete your marketplace permanently"
       cannot_delete: "Could not delete marketplace."
       delete_info_text: "Would you like to cancel your subscription or delete your marketplace? <a href='#' show-intercom=true >Contact the Sharetribe team</a>, we'll be happy to help!"
@@ -644,7 +644,7 @@ en:
           no_listing_no_payment: "Users who haven't posted a listing and haven't added their payment details"
     google_manager:
       info_text: "Using a tag manager such as Google Tag Manager (GTM) is a great way to manage and deploy snippets of code or tracking pixels on your website without having to modify the source code. GTM allows you to use more advanced Google Analytics features, such as goal conversions tracking."
-      info_text_2: "Sharetribe also relies on Google Tag Manager its own analytics. You should disable Sharetribe's analytics before enabling your tag manager for more accurate tracking. <a href='%{url}' class='external-link' target='_blank'>Learn more about configuring GTM for your Go marketplace</a>."
+      info_text_2: "AVA also relies on Google Tag Manager its own analytics. You should disable AVA's analytics before enabling your tag manager for more accurate tracking. <a href='%{url}' class='external-link' target='_blank'>Learn more about configuring GTM for your Go marketplace</a>."
     google_console:
       info_text: "Google Search Console offers tools and reports to help you measure your search traffic and performance and fix issues related to Google Search results."
       info_text_2: "It's a good idea to add your website to Google Search Console. It takes only a few minutes with <a href='%{url}' class='external-link' target='_blank'>these instructions</a>."
@@ -887,7 +887,7 @@ en:
           refunded: Refunded
           dismissed: Dismissed
     expired_popup:
-      title: "%{first_name}, your 30-day Sharetribe Go trial has expired."
+      title: "%{first_name}, your 30-day AVA Go trial has expired."
       body: "Don't worry, your data has not been deleted. You can unlock your marketplace immediately by subscribing to a paid plan, starting from $79 per month."
       more_information: "Need help or more time? <a href=\"%{mailto}\">Contact us</a> or <a href=\"%{expire_url}\">extend your free trial for two weeks</a>."
       choose_plan: "Choose a plan"
@@ -956,7 +956,7 @@ en:
       footer_disabled: "<b>Pro feature:</b> Would you like to configure your own custom footer? <a href=\"%{url}\">Upgrade to the Pro plan or higher</a>."
       footer_enabling: "Show footer"
       footer_enabling_field: "Show the footer on all pages"
-      footer_enabling_info_text: "In trial and Hobby plans, the footer is Sharetribe-branded and can't be customized. In Pro plans and higher, you can customize the footer. The footer is displayed on all pages of your marketplace. <br> <br> The footer gives your visitors more ways to access important pages on your marketplace and makes your brand more visible. You can select a dark or light footer style and add text, social media links, and a copyright text. <a href=\"%{url}\" class='external-link' target=\"_blank\">Learn more about the footer</a>."
+      footer_enabling_info_text: "In trial and Hobby plans, the footer is AVA-branded and can't be customized. In Pro plans and higher, you can customize the footer. The footer is displayed on all pages of your marketplace. <br> <br> The footer gives your visitors more ways to access important pages on your marketplace and makes your brand more visible. You can select a dark or light footer style and add text, social media links, and a copyright text. <a href=\"%{url}\" class='external-link' target=\"_blank\">Learn more about the footer</a>."
       plan_disabled: "Would you like to configure your own own custom footer? <a href=\"%{url}\" target=\"_blank\">Upgrade to the Pro plan or higher</a>."
       footer_style: "Footer style"
       footer_links: "Footer links"
@@ -987,7 +987,7 @@ en:
       all: "Show all"
     custom_script:
       script_disabled: "<b>Paid feature:</b> Would you like to add your own custom script? <a href=\"%{url}\">Upgrade to a paid plan</a>."
-      info_text: "Custom script can be used to insert custom CSS, JavaScript or HTML. Note that future updates to Sharetribe Go features may render your script incompatible. <a href='%{url}' class='external-link' target='_blank'>Learn more about Custom script</a>."
+      info_text: "Custom script can be used to insert custom CSS, JavaScript or HTML. Note that future updates to AVA Go features may render your script incompatible. <a href='%{url}' class='external-link' target='_blank'>Learn more about Custom script</a>."
       custom_head_script: "Custom head code"
       custom_head_script_placeholder: "<script> ... </script>"
       custom_head_script_info_text: "The code from that field will be added to the <code>&lt;head&gt;</code> tag of every page."
@@ -998,8 +998,8 @@ en:
       custom_css_script_placeholder: ".class { ... }"
       custom_css_script_info_text: "The code from that field will be added to the <code>CSS</code> of every page."
     sharetribe:
-      info_text: "To improve its services and support, Sharetribe tracks marketplace users' activity. We will never collect personal data or share this information outside the Sharetribe team. <a href='%{url}' class=\"external-link\" target='_blank'>Learn more</a>."
-      end_user_analytics: "Allow Sharetribe to track users' activity in order to improve its services"
+      info_text: "To improve its services and support, AVA tracks marketplace users' activity. We will never collect personal data or share this information outside the AVA team. <a href='%{url}' class=\"external-link\" target='_blank'>Learn more</a>."
+      end_user_analytics: "Allow AVA to track users' activity in order to improve its services"
     google:
       info_text: "Google Analytics helps you track your marketplace traffic. You'll be able to browse and analyze lots of data: number of visitors, pages viewed, time spent on your marketplace, traffic sources, etc. <a href='%{url}' class='external-link' target='_blank' >Learn more about the Google Analytics setup</a>."
       google_analytics_key: "Google Analytics tracking ID"
@@ -1099,7 +1099,7 @@ en:
       country_info_text: "Want to change the country of your marketplace? <a href=\"#\" show-intercom=true >Contact the Sharetribe team</a>."
       currency_info_text: "Want to change the currency of your marketplace? <a href=\"#\" show-intercom=true >Contact the Sharetribe team</a>."
       currency: Currency
-      support: "Sharetribe Go offers PayPal and Stripe as payment gateways. Learn more about the countries and currencies <a href=\"%{paypal_url}\" class=\"external-link\" target=\"_blank\">supported by PayPal</a> and <a href=\"%{stripe_url}\" class=\"external-link\" target=\"_blank\">supported by Stripe</a>."
+      support: "AVA Go offers PayPal and Stripe as payment gateways. Learn more about the countries and currencies <a href=\"%{paypal_url}\" class=\"external-link\" target=\"_blank\">supported by PayPal</a> and <a href=\"%{stripe_url}\" class=\"external-link\" target=\"_blank\">supported by Stripe</a>."
       stripe_paypal_allowed: "With <strong>%{country_name}</strong> and <strong>%{currency}</strong> as your marketplace settings, <strong>PayPal</strong> and <strong>Stripe</strong> can be configured as payment gateways in your marketplace."
       paypal_allowed: "With <strong>%{country_name}</strong> and <strong>%{currency}</strong> as your marketplace settings, <strong>PayPal</strong> can be configured as the payment gateway in your marketplace."
       stripe_allowed: "With <strong>%{country_name}</strong> and <strong>%{currency}</strong> as your marketplace settings, <strong>Stripe</strong> can be configured as the payment gateway in your marketplace."
@@ -1219,7 +1219,7 @@ en:
       community_description_info_text: "Description is shown in browsers, search engine results, and social media."
       default_language: "First language on the list is used as the default. Your marketplace default language is %{language}."
       marketplace_languages: "Marketplace languages"
-      language_selection_disabled: "The language selection is disabled for your marketplace because you are using the following languages: %{languages}. Contact the Sharetribe team if you want to modify your marketplace language settings."
+      language_selection_disabled: "The language selection is disabled for your marketplace because you are using the following languages: %{languages}. Contact the AVA team if you want to modify your marketplace language settings."
       color: Color
       clp_enabled: "As you have a Custom Landing Page enabled, the color can't be changed."
       show_slogan: "Display slogan on the homepage or Custom Landing Page for users who are not logged in"
@@ -1410,7 +1410,7 @@ en:
       category_pages_updated: "Category pages meta tags settings were updated"
       profile_pages_updated: "Profile pages meta tags settings were updated"
       google_analytics_updated: "Google analytics settings were updated"
-      sharetribe_analytics_updated: "Sharetribe analytics settings were updated"
+      sharetribe_analytics_updated: "AVA analytics settings were updated"
       custom_script_updated: "Custom script settings were updated"
       topbar_updated: "Top bar settings were updated"
       footer_updated: "Footer settings were updated"
@@ -1434,5 +1434,5 @@ en:
       custom_script_disabled: "Custom script is disabled. Please upgrade to a paid plan."
     seo:
       title: "%{title} | %{service_name} Go Admin panel"
-      description: "Manage the %{title} settings of your %{service_name} Sharetribe Go marketplace"
+      description: "Manage the %{title} settings of your %{service_name} AVA Go marketplace"
       only_supported_variables: "Make sure to add only supported variables"

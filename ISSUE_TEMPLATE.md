@@ -1,8 +1,8 @@
 _Please add only one problem per Issue. If you are facing multiple problems, add multiple Issues._
 
-##### Sharetribe Version:
+##### Ava Version:
 
-_Share the git commit hash of the version of Sharetribe that you are using. You can find it by running `git rev-parse HEAD` in your Sharetribe directory._
+_Share the git commit hash of the version of Ava that you are using. You can find it by running `git rev-parse HEAD` in your Ava directory._
 
 ##### Environment:
 

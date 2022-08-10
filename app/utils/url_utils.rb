@@ -30,16 +30,16 @@ module URLUtils
     uri.to_s
   end
 
-  # http://www.sharetribe.com/en/people -> en
-  # http://www.sharetribe.com/en-US/people -> en-US
+  # http://www.Ava.com/en/people -> en
+  # http://www.Ava.com/en-US/people -> en-US
   #
   # Returns the first "folder" in path. Does not validate the locale
   def extract_locale_from_url(url)
     URI(url).path.split('/')[1]
   end
 
-  # www.sharetribe.com => www.sharetribe.com
-  # www.sharetribe.com:3000 => www.sharetribe.com
+  # www.Ava.com => www.Ava.com
+  # www.Ava.com:3000 => www.Ava.com
   def strip_port_from_host(host)
     host.split(":").first
   end

@@ -43,7 +43,7 @@ class Maintenance
     elsif env_value.is_a?(String)
       Time.parse(env_value)
     else
-      SharetribeLogger.warn(
+      AvaLogger.warn(
         "Unknown environment variable value for next maintenance mode",
         :maintenance,
         value: env_value, class: env_value.class.name

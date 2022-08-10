@@ -1,6 +1,6 @@
 FROM ruby:2.7.5-buster
 
-MAINTAINER Sharetribe Team <team@sharetribe.com>
+MAINTAINER Ava Team <team@Ava.com>
 
 ENV REFRESHED_AT 2021-09-10
 
@@ -54,7 +54,7 @@ RUN curl -sfSL \
   && chmod 755 /usr/sbin/secure-environment
 
 #
-# Sharetribe
+# Ava
 #
 
 # Install:

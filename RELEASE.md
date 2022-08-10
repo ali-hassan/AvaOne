@@ -43,16 +43,16 @@ When you are ready to release a new version, follow these steps:
 
     ```bash
     $ git remote -v
-    origin    git@github.com:sharetribe/go.git (fetch)
-    origin    git@github.com:sharetribe/go.git (push)
-    public    git@github.com:sharetribe/sharetribe.git (fetch)
-    public    git@github.com:sharetribe/sharetribe.git (push)
+    origin    git@github.com:Ava/go.git (fetch)
+    origin    git@github.com:Ava/go.git (push)
+    public    git@github.com:Ava/Ava.git (fetch)
+    public    git@github.com:Ava/Ava.git (push)
     ```
     
     If not, add one:
     
     ```bash
-    git remote add public git@github.com:sharetribe/sharetribe.git
+    git remote add public git@github.com:Ava/Ava.git
     ```
 
 1.  Push the tags to the public Go repository:
@@ -62,7 +62,7 @@ When you are ready to release a new version, follow these steps:
     git push -f public refs/tags/latest
     ```
 
-1.  Go to [Github releases and draft a new release](https://github.com/sharetribe/sharetribe/releases/new)
+1.  Go to [Github releases and draft a new release](https://github.com/Ava/sharetribe/releases/new)
 
     Use the following content:
 

@@ -48,7 +48,7 @@ class DownloadListingImageJob < Struct.new(:listing_image_id, :url)
   private
 
   def logger
-    @logger ||= SharetribeLogger.new(:download_listing_image_job, logger_metadata.keys).tap { |logger|
+    @logger ||= AvaLogger.new(:download_listing_image_job, logger_metadata.keys).tap { |logger|
       logger.add_metadata(logger_metadata)
     }
   end
