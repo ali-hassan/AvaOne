@@ -5,7 +5,7 @@ ruby '2.6.5'
 gem 'rails', '5.2.6'
 
 gem 'coffee-rails', '~> 4.2.2'
-gem 'uglifier', '~> 3.2.0'
+gem 'uglifier', '~> 4.1'
 
 gem 'sass-rails', '~> 5.0.6'
 gem 'compass-rails', '~> 4.0.0'
@@ -91,7 +91,7 @@ gem 'faraday', '~> 0.13.0'
 gem 'faraday_middleware', '~> 0.11.0'
 gem 'faraday-encoding', '~> 0.0.4'
 
-gem "react_on_rails", ">= 11.3.0"
+gem "react_on_rails", "= 11.3.0"
 
 gem 'sitemap_generator', '~> 5.3.1'
 

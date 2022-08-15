@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     collection do
       get 'terms', to: 'dashboard#terms', as: :terms
       get 'policy', to: 'dashboard#policy', as: :policy
-      get 'contact', to: 'dashboard#policy'
+      get 'contact', to: 'dashboard#contact'
     end
   end
   resources :ranks

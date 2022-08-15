@@ -9,15 +9,11 @@ require 'capistrano/ssh_doctor'
 require 'capistrano/bundler'
 
 require 'capistrano/rails/assets'
-require 'capistrano/rails/migrations'
-
-## Needs to check above two for deployment if crash at certain points.
+# require 'capistrano/rails/migrations'
 require 'capistrano/puma'
 install_plugin Capistrano::Puma
-require 'capistrano/sidekiq'
-# require "whenever/capistrano"
-
-
 install_plugin Capistrano::Puma::Daemon
+require 'capistrano/npm'
+require 'thinking_sphinx/capistrano'
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }

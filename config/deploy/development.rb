@@ -19,6 +19,10 @@ namespace :paths do
     run "ln -sf  #{shared_path}/config/config.yml #{current_path}/config/config.yml"
   end
 end
+set :rails_env, "development"
+set :puma_env, "development"
+set :puma_config_file, "#{shared_path}/config/puma.rb"
+set :puma_conf, "#{shared_path}/config/puma.rb"
 
 ask :branch, 'master'
 # set :npm_flags, '--staging' # default

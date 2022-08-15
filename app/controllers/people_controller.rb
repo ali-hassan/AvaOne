@@ -94,7 +94,8 @@ class PeopleController < Devise::RegistrationsController
 
     # send email confirmation
     # (unless disabled for testing environment)
-    if APP_CONFIG.skip_email_confirmation
+    # if APP_CONFIG.skip_email_confirmation
+    if true
       email.confirm!
 
       redirect_to search_path
@@ -272,7 +273,7 @@ class PeopleController < Devise::RegistrationsController
 
     person.inherit_settings_from(current_community)
 
-    if person.save!
+    if person.save
       sign_in(resource_name, resource)
     end
 
