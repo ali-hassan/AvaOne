@@ -18,7 +18,7 @@ gem 'jquery-rails', '~> 4.3.1'
 gem "passenger", '~> 6.0.14'
 
 gem "mysql2", '0.4.10'
-gem "bcrypt", '3.1.12'
+# gem "bcrypt", '3.1.12'
 gem 'haml', '~> 5.0.4'
 gem 'sass', '~> 3.4.24'
 gem 'rack-attack', '~> 6.0.0'
@@ -204,4 +204,5 @@ group :deployment do
 end
 gem 'therubyracer', :platform => :ruby
 gem 'libv8'
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 #bundle update libv8 mini_racer

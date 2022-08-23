@@ -1,4 +1,10 @@
 GIT
+  remote: https://github.com/codahale/bcrypt-ruby.git
+  revision: 4268ac86c45fa4b313a1bb1b878f0b8bc85e9d0c
+  specs:
+    bcrypt (3.1.18)
+
+GIT
   remote: https://github.com/ithouse/fake_stripe.git
   revision: 56fe73dc420d161ecf9842739af7d857031ca1b2
   ref: 56fe73dc420d161ecf9842739af7d857031ca1b2
@@ -102,7 +108,6 @@ GEM
     aws-sigv4 (1.5.1)
       aws-eventstream (~> 1, >= 1.0.2)
     backports (3.23.0)
-    bcrypt (3.1.12)
     bindex (0.8.1)
     biz (1.8.2)
       clavius (~> 1.0)
@@ -702,7 +707,7 @@ DEPENDENCIES
   awesome_print (~> 1.7.0)
   aws-sdk-s3 (~> 1.48)
   aws-sdk-ses (~> 1.34)
-  bcrypt (= 3.1.12)
+  bcrypt!
   biz
   bootsnap (~> 1.4.5)
   capistrano (= 3.11)
