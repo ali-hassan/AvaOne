@@ -202,6 +202,7 @@ group :deployment do
   gem 'capistrano3-puma',   require: false
   gem 'capistrano-npm'
 end
+# mac changes
 gem 'therubyracer', :platform => :ruby
 gem 'libv8'
 #bundle update libv8 mini_racer
