@@ -18,4 +18,7 @@ class DashboardController < ApplicationController
   def contact
 
   end
+  def contact_us
+    
+  end
 end
