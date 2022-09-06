@@ -206,3 +206,5 @@ end
 gem 'therubyracer', :platform => :ruby
 gem 'libv8'
 #bundle update libv8 mini_racer
+#
+# checked the data and other stuff
